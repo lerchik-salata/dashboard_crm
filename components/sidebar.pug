@@ -1,11 +1,11 @@
 - 
   var menuItems = [
-    { name: 'Dashboard', icon: '../assets/img/dashboard.svg' },
-    { name: 'Product', icon: '../assets/img/product.svg' },
-    { name: 'Customers', icon: '../assets/img/customers.svg' },
-    { name: 'Income', icon: '../assets/img/income.svg' },
-    { name: 'Promote', icon: '../assets/img/promote.svg' },
-    { name: 'Help', icon: '../assets/img/help.svg' }
+    { name: 'Dashboard', icon: './assets/img/dashboard.svg' },
+    { name: 'Product', icon: './assets/img/product.svg' },
+    { name: 'Customers', icon: './assets/img/customers.svg' },
+    { name: 'Income', icon: './assets/img/income.svg' },
+    { name: 'Promote', icon: './assets/img/promote.svg' },
+    { name: 'Help', icon: './assets/img/help.svg' }
   ]
 
 aside(class="sidebar fade-in")
@@ -21,9 +21,9 @@ aside(class="sidebar fade-in")
             div.sidebar__link-content
               img.sidebar__icon(src=item.icon alt=`${item.name} icon`)
               span.sidebar__text #{item.name}
-            img.sidebar__arrow(src="../assets/img/arrow.svg", alt="Arrow")
+            img.sidebar__arrow(src="./assets/img/arrow.svg", alt="Arrow")
   .user-profile
-    img.user-profile__avatar(src="../assets/img/avatar.png", alt="Evano")
+    img.user-profile__avatar(src="./assets/img/avatar.png", alt="Evano")
     .user-profile__info.fade-in
       p.user-profile__name Evano
       small.user-profile__role Project Manager
