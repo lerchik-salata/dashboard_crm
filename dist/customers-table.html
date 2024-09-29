@@ -1,0 +1,39 @@
+
+<div class="customers-table fade-in">
+  <div class="main-content__header fade-in">
+    <div>
+      <h3 class="main-content__title">All Customers</h3>
+      <p class="main-content__subtitle">Active Members</p>
+    </div>
+    <div class="search-bar">
+      <button class="search-bar__button"> <img class="search-bar__icon" src="../assets/img/search.svg" alt="search"/></button>
+      <input class="search-bar__input" type="text" placeholder="Search"/>
+    </div>
+  </div>
+  <table class="customers-table__table fade-in">
+    <thead class="customers-table__head">
+      <tr>
+        <th class="customers-table__th fade-in">Customer Name</th>
+        <th class="customers-table__th fade-in">Company</th>
+        <th class="customers-table__th fade-in">Phone Number</th>
+        <th class="customers-table__th fade-in">Email</th>
+        <th class="customers-table__th fade-in">Country</th>
+        <th class="customers-table__th fade-in">Status</th>
+      </tr>
+    </thead>
+    <tbody class="customers-table__body">
+    </tbody>
+  </table>
+  <div class="pagination fade-in">
+    <p class="pagination__info">Showing data 1 to 8 of 256K entries</p>
+    <ul class="pagination__list">
+      <li class="pagination__item"><a class="pagination__link" href="#">&lt;</a></li>
+      <li class="pagination__item"><a class="pagination__link" href="#" onclick="selectPage(1)">1</a></li>
+      <li class="pagination__item"><a class="pagination__link" href="#" onclick="selectPage(2)">2</a></li>
+      <li class="pagination__item"><a class="pagination__link" href="#" onclick="selectPage(3)">3</a></li>
+      <li class="pagination__item"><a class="pagination__link" href="#" onclick="selectPage(4)">4</a></li>
+      <li class="pagination__item"><a class="pagination__link" href="#" onclick="selectPage(5)">5</a></li>
+      <li class="pagination__item"><a class="pagination__link" href="#">&gt;</a></li>
+    </ul>
+  </div>
+</div>
