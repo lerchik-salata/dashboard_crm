@@ -1,0 +1,25 @@
+.customers-table.fade-in
+  .main-content__header.fade-in
+    div
+      h3.main-content__title All Customers
+      p.main-content__subtitle Active Members
+    .search-bar
+      button.search-bar__button 
+        img.search-bar__icon(src="../assets/img/search.svg" alt="search")
+      input.search-bar__input(type="text" placeholder="Search")
+  table.customers-table__table.fade-in
+    thead.customers-table__head
+      tr
+        each header in ['Customer Name', 'Company', 'Phone Number', 'Email', 'Country', 'Status']
+          th.customers-table__th.fade-in #{header}
+    tbody.customers-table__body
+      each customer in customers || []
+        tr.customers-table__row.fade-in
+          td.customers-table__cell #{customer.name}
+          td.customers-table__cell #{customer.company}
+          td.customers-table__cell #{customer.phone}
+          td.customers-table__cell #{customer.email}
+          td.customers-table__cell #{customer.country}
+          td.customers-table__cell
+            .customers-table__cell_status(class= customer.status === 'Active' ? 'status_active' : 'status_inactive') #{customer.status}
+  include ../components/pagination

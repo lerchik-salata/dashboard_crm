@@ -1,0 +1,11 @@
+.pagination.fade-in
+  p.pagination__info Showing data 1 to 8 of 256K entries
+  ul.pagination__list
+    li.pagination__item
+       a.pagination__link(href="#") &lt;
+    each page in [1, 2, 3, 4, 5]
+      li.pagination__item
+        a.pagination__link(href="#", onclick=`selectPage(${page})`) #{page}
+    li.pagination__item
+      a.pagination__link(href="#") &gt;
+
